@@ -22,7 +22,7 @@
     font-weight: 600;
 }
 
-main {
+main, footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -124,6 +124,25 @@ header {
     margin-bottom: 2rem;
     max-width: 540px;
 }
+/* Features related styles */
+.features{
+    gap: 140px;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.feature-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+}
 
 /* Some facts related styles */
 .facts-container{
@@ -155,6 +174,32 @@ header {
     font-weight: 600;
     color: #727272;
 }
+/* Sponspors related styles */
+.sponspors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponspors-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponspors-companies img{
+    filter: grayscale(100%);
+}
+
+/* Footer related styles */
+footer {
+    margin-top: 130px;
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 39px 410px;
+    border-radius: 8px;
+}
+.footer-description{
+    font-size: 1.25rem;
+    color: #424242;
+    text-align: center;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -165,9 +210,16 @@ header {
         flex-direction: column;
     }
 
-    .team-img-container {
+    .team-img-container, 
+    .facts-container,
+    .sponspors-companies 
+    {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column-reverse;
+    }
+    .facts-container, .sponspors-companies{
+        justify-content: center;
+        gap: 24px;
     }
 
     .our-features {

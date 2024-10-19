@@ -27,6 +27,10 @@ main{
 main > section{
     margin-top: 130px;
 }
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
 
 /* Header style */
 header {
@@ -97,10 +101,7 @@ header {
     margin-left: 130px;
     max-width: 537px;
 }
-.feature-title{
-    font-size: 3rem;
-    font-weight: 700;
-}
+
 #fea-ti-1{
     color: #727272;
     font-weight: 500;
@@ -112,6 +113,11 @@ header {
     color: #727272;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+}
+
+/* Some facts related styles */
+.section-title{
+    margin-bottom: 24px;
 }
 
 

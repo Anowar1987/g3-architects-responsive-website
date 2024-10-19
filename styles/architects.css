@@ -22,7 +22,8 @@
     font-weight: 600;
 }
 
-main, footer {
+main,
+footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -124,34 +125,59 @@ header {
     margin-bottom: 2rem;
     max-width: 540px;
 }
+
 /* Features related styles */
-.features{
+.features {
     gap: 140px;
 }
-#feature-section-title{
+
+.feature-architect img {
+    width: 100%;
+}
+
+#feature-section-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
-.feature-card{
+
+.feature-card {
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 30px;
     margin-bottom: 20px;
 }
-.feature-card-title{
+
+.feature-card-title {
     font-size: 1.25rem;
     font-weight: 600;
     color: #131313;
 }
 
+#experience-badge {
+    width: 342px;
+    height: 200px;
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 /* Some facts related styles */
-.facts-container{
+.facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
 .section-title {
     margin-bottom: 24px;
 }
+
 .fact-card {
     box-sizing: border-box;
     border: 1px solid #FF900E;
@@ -162,29 +188,34 @@ header {
     justify-content: center;
     align-items: center;
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.75rem;
     font-weight: 600;
     color: #424242;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     color: #727272;
 }
+
 /* Sponspors related styles */
-.sponspors-info{
+.sponspors-info {
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
 }
-.sponspors-companies{
+
+.sponspors-companies {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.sponspors-companies img{
+
+.sponspors-companies img {
     filter: grayscale(100%);
 }
 
@@ -195,7 +226,8 @@ footer {
     padding: 39px 410px;
     border-radius: 8px;
 }
-.footer-description{
+
+.footer-description {
     font-size: 1.25rem;
     color: #424242;
     text-align: center;
@@ -206,23 +238,29 @@ footer {
 
     .navbar,
     .nav-links,
+    .features,
     .teams {
         flex-direction: column;
     }
 
-    .team-img-container, 
+    .team-img-container,
     .facts-container,
-    .sponspors-companies 
-    {
+    .sponspors-companies {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column-reverse;
     }
-    .facts-container, .sponspors-companies{
+
+    .facts-container,
+    .sponspors-companies {
         justify-content: center;
         gap: 24px;
     }
 
     .our-features {
+        margin-left: 20px;
+    }
+    #experience-badge{
+        margin-top: 20px;
         margin-left: 20px;
     }
 }
